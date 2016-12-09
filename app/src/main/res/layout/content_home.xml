@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.techpenta.pressbuy.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#DAD9D7"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WHAT DO YOU WANT TO BUY?"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textColor="#FFF"
+                    />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#DAD9D7"
+            android:gravity="center"
+
+            android:layout_gravity="center_horizontal">
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rectet"
+                android:id="@+id/editText"
+                android:layout_gravity="center"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#F6961E"
+                android:text="SEARCH"
+                android:textColor="#FFF"/>
+        </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+           >
+
+
+            <com.techpenta.pressbuy.TabFragments.CustomTabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/tab_layout"
+
+                app:tabIndicatorColor="#000"
+
+                app:tabIndicatorHeight="3.9dp"
+                android:background="#00f0e7e7"
+
+                app:tabTextColor="#000000"
+                app:tabSelectedTextColor="#fff"
+                android:elevation="6dp"
+                >
+            </com.techpenta.pressbuy.TabFragments.CustomTabLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_marginBottom="40dp"
+    android:layout_marginTop="30dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_marginTop="0dp"
+                android:background="#00f0e7e7" />
+
+</LinearLayout>
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content">
+
+
+     <HorizontalScrollView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:fillViewport="true"
+         android:background="#00f0e7e7"
+         android:layout_marginTop="0dp"
+         android:scrollbars="horizontal|vertical">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center"
+             android:layout_marginBottom="50dp">
+
+
+
+
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="10dp">
+
+
+
+                 <ImageView
+                     android:layout_width="200dp"
+                     android:layout_height="180dp"
+                     android:layout_marginTop="100dp"
+                     android:background="#ECD875"
+                     android:id="@+id/upload1" />
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/upload2"
+                     android:src="@drawable/icon1"
+                     android:layout_marginTop="25dp"
+
+                     android:layout_below="@+id/relativeLayoutupload"
+                     android:layout_centerHorizontal="true" />
+
+                 <RelativeLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/relativeLayoutupload">
+
+
+                 </RelativeLayout>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Upload your first product "
+                     android:id="@+id/textViewupload"
+                     android:layout_marginTop="22dp"
+                     android:layout_below="@+id/uploadtxt"
+                     android:layout_centerHorizontal="true" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Upload"
+                     android:textSize="25dp"
+                     android:textColor="#FFF"
+                     android:id="@+id/uploadtxt"
+                     android:layout_below="@+id/upload2"
+                     android:layout_centerHorizontal="true" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="right away"
+                     android:id="@+id/textViewupload2"
+                     android:layout_below="@+id/textViewupload"
+                     android:layout_centerHorizontal="true" />
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="10dp">
+
+
+
+                 <ImageView
+                     android:layout_width="200dp"
+                     android:layout_height="180dp"
+                     android:layout_marginTop="100dp"
+                     android:background="#F6961E"
+                     android:id="@+id/newuser2" />
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/newuser1"
+                     android:src="@drawable/icon2"
+                     android:layout_marginTop="25dp"
+
+                     android:layout_below="@+id/relativeLayoutnewuser"
+                     android:layout_centerHorizontal="true" />
+
+                 <RelativeLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/relativeLayoutnewuser">
+
+
+                 </RelativeLayout>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Sign up to start buying"
+                     android:id="@+id/textViewnewuser1"
+                     android:layout_below="@+id/newuser1"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="43dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="New User"
+                     android:textSize="25dp"
+                     android:textColor="#FFF"
+                     android:id="@+id/newusertxt"
+                     android:layout_below="@+id/newuser1"
+                     android:layout_centerHorizontal="true" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="or selling"
+                     android:id="@+id/textViewnewuser2"
+                     android:layout_below="@+id/textViewnewuser1"
+                     android:layout_centerHorizontal="true" />
+
+             </RelativeLayout>
+
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginLeft="10dp">
+
+
+
+                 <ImageView
+                     android:layout_width="200dp"
+                     android:layout_height="180dp"
+                     android:layout_marginTop="100dp"
+                     android:background="#36EAE1"
+                     android:id="@+id/login2" />
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/login1"
+                     android:src="@drawable/icon3"
+                     android:layout_marginTop="25dp"
+
+                     android:layout_below="@+id/relativeLayoutlogin"
+                     android:layout_centerHorizontal="true" />
+
+                 <RelativeLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/relativeLayoutlogin">
+
+
+                 </RelativeLayout>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Ligin into your existing"
+                     android:id="@+id/textViewlogin"
+                     android:layout_below="@+id/login1"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="43dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Login"
+                     android:textSize="25dp"
+                     android:textColor="#FFF"
+                     android:id="@+id/logintxt"
+                     android:layout_below="@+id/login1"
+                     android:layout_centerHorizontal="true" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="account"
+                     android:id="@+id/textViewnewuserlogin2"
+                     android:layout_below="@+id/textViewlogin"
+                     android:layout_centerHorizontal="true" />
+
+             </RelativeLayout>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginLeft="10dp">
+
+
+
+                 <ImageView
+                     android:layout_width="200dp"
+                     android:layout_height="180dp"
+                     android:layout_marginTop="100dp"
+                     android:background="#503D2F"
+                     android:id="@+id/imageView2" />
+
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/loginimg"
+                     android:src="@drawable/icon4"
+                     android:layout_marginTop="25dp"
+
+                     android:layout_below="@+id/relativeLayoutlogin2"
+                     android:layout_centerHorizontal="true" />
+
+                 <RelativeLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/relativeLayoutlogin2">
+
+
+                 </RelativeLayout>
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Click to view a random"
+                     android:id="@+id/textView3"
+                     android:layout_below="@+id/loginimg"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginTop="43dp" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Random Product"
+                     android:textSize="25dp"
+                     android:textColor="#FFF"
+                     android:id="@+id/textView2"
+                     android:layout_below="@+id/loginimg"
+                     android:layout_centerHorizontal="true" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="product"
+                     android:id="@+id/textView4"
+                     android:layout_below="@+id/textView3"
+                     android:layout_centerHorizontal="true" />
+
+             </RelativeLayout>
+
+
+         </LinearLayout>
+     </HorizontalScrollView>
+
+
+
+
+
+
+
+
+ </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+
+                    >
+
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="FOR BUYERS"
+                        android:textColor="#fff"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/english_lang"
+                        android:height="50dp"
+                        android:src="@drawable/buyerbtn"
+                        android:background="@drawable/rect_slidetab2"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+
+                    android:gravity="center"
+                    android:layout_weight="1"
+
+                    >
+
+
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:text="FOR SELLERS"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/sellerbtn"
+
+                        android:textColor="#fff"
+                        android:id="@+id/urdu_lang"
+                        android:height="50dp"
+                        android:background="@drawable/rect_slidetab4"
+                        android:textStyle="bold" />
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#503D2F"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:text="If you would like to terminate your account/membership with Pressbuy, "/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="notify us at "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F6961E"
+                android:text="support@pressbuy.com"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="CONTACT US"
+            android:textColor="#FFF"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rect"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+        </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lowtab"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#2C211B"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/copyright"
+                android:textColor="#FFF"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="Copyright 2016 Press Buy"/>
+
+        </LinearLayout>
+</LinearLayout>
+    </FrameLayout>
+</FrameLayout>
